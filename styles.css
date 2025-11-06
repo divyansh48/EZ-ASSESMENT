@@ -1,0 +1,99 @@
+/* Basic reset and font */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100%;
+}
+
+/* Container to center and constrain width */
+.container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Form layout and spacing */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input and textarea common styles */
+input, textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus */
+input:focus, textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+/* Textarea height */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Submit button styles */
+button {
+  background-color: #2196f3;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #1769aa;
+}
+
+/* Error message style */
+.error {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Success message style */
+.success {
+  color: #388e3c;
+  font-weight: 600;
+}
+
+/* Responsive breakpoints for wider screens */
+@media (min-width: 720px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 823px;
+  }
+}
+@media (min-width: 2732px) {
+  .container {
+    max-width: 900px;
+  }
+}
